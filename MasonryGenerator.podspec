@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MasonryGenerator"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "A Mansory extension to generate native NSLayoutConstraint code from Mansory code."
 
   s.description  = <<-DESC
