@@ -47,7 +47,6 @@
     [superview addSubview:view3];
     
     int padding = 10;
-
     [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.greaterThanOrEqualTo(superview.mas_top).offset(padding + 20);
         make.left.equalTo(superview.mas_left).offset(padding);

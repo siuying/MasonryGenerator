@@ -8,6 +8,7 @@
 
 #import "View+Generator.h"
 #import "MASConstraintMaker+Generator.h"
+#import "MASViewConstraint+Generator.h"
 
 @implementation MAS_VIEW (Generator)
 
@@ -15,8 +16,10 @@
     MASConstraintMaker *constraintMaker = [[MASConstraintMaker alloc] initWithView:self];
     block(constraintMaker);
     NSString* constraints = [constraintMaker generate];
-    NSLog(@"=====================================================\n%@\n"
-          @"=====================================================", constraints);
+    NSLog(@"//=====================================================\n\n"
+          @"%@.translatesAutoresizingMaskIntoConstraints = NO;\n"
+          @"%@\n",
+          [MASViewConstraint instanceDescriptionForObject:self], constraints);
     return constraints;
 }
 

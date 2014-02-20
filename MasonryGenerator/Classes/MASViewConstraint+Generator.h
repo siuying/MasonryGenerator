@@ -10,6 +10,8 @@
 
 @interface MASViewConstraint (Generator)
 
++ (NSString *)instanceDescriptionForObject:(id)obj;
+
 -(NSString*) generate;
 
 @end
