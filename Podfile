@@ -2,7 +2,6 @@
 # platform :ios, "6.0"
 
 pod "Masonry"
-pod "CocoaLumberjack"
 pod "JRSwizzle"
 
 target "MasonryGeneratorTests" do
