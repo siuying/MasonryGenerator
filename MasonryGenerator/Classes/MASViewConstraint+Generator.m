@@ -9,24 +9,29 @@
 #import "MASViewConstraint+Generator.h"
 #import "IGMasonryGeneratorHelper.h"
 #import "View+MASAdditions.h"
+#import "NSLayoutConstraint+MASDebugAdditions.h"
 
 @interface MASViewConstraint (Private)
 @property (nonatomic, strong, readwrite) MASViewAttribute *secondViewAttribute;
-@property (nonatomic, weak) MAS_VIEW *installedView;
 @property (nonatomic, weak) MASLayoutConstraint *layoutConstraint;
 @property (nonatomic, assign) NSLayoutRelation layoutRelation;
 @property (nonatomic, assign) MASLayoutPriority layoutPriority;
 @property (nonatomic, assign) CGFloat layoutMultiplier;
 @property (nonatomic, assign) CGFloat layoutConstant;
-@property (nonatomic, assign) BOOL hasLayoutRelation;
 @property (nonatomic, strong) id mas_key;
-@property (nonatomic, assign) BOOL useAnimator;
 + (NSString *)descriptionForObject:(id)obj;
 @end
 
 @implementation MASViewConstraint (Generator)
 
--(NSString*) constraintString {
++ (NSString *)instanceDescriptionForObject:(id)obj {
+    if ([obj respondsToSelector:@selector(mas_key)] && [obj mas_key]) {
+        return [NSString stringWithFormat:@"%@", [obj mas_key]];
+    }
+    return [NSString stringWithFormat:@"%@", [obj class]];
+}
+
+-(NSString*) generate {
     NSMutableString* constraint = [[NSMutableString alloc] init];
 
     MAS_VIEW *firstLayoutItem = self.firstViewAttribute.view;
@@ -36,8 +41,7 @@
     NSLayoutAttribute secondLayoutAttribute = self.secondViewAttribute.layoutAttribute;
     NSString* secondLayoutAttributeString   = [IGMasonryGeneratorHelper layoutAttributeNames][@(secondLayoutAttribute)] ?: @"0";
     NSString* relationString = [IGMasonryGeneratorHelper layoutRelationNames][@(self.layoutRelation)] ?: @"0";
-    
-    
+
     MAS_VIEW *installedView;
     if (secondLayoutItem) {
         MAS_VIEW *closestCommonSuperview = [firstLayoutItem mas_closestCommonSuperview:secondLayoutItem];
@@ -49,14 +53,28 @@
         installedView = firstLayoutItem;
     }
     
-    [constraint appendFormat:@"[%@ addConstraint:[NSLayoutConstraint constraintWithItem:%@\n", [MASViewConstraint descriptionForObject:installedView], [MASViewConstraint descriptionForObject:firstLayoutItem]];
-    [constraint appendFormat:@"                                               attribute:%@\n", firstLayoutAttributeString];
-    [constraint appendFormat:@"                                               relatedBy:%@\n", relationString];
-    [constraint appendFormat:@"                                                  toItem:%@\n", [MASViewConstraint descriptionForObject:secondLayoutItem]];
-    [constraint appendFormat:@"                                               attribute:%@\n", secondLayoutAttributeString];
-    [constraint appendFormat:@"                                              multiplier:%.1f\n", self.layoutMultiplier];
-    [constraint appendFormat:@"                                              multiplier:%.1f]];\n", self.layoutConstant];
+    NSString* installedViewName = [MASViewConstraint instanceDescriptionForObject:installedView];
+    NSString* firstLayoutItemName = [MASViewConstraint instanceDescriptionForObject:firstLayoutItem];
+    NSString* secondLayoutItemName = [MASViewConstraint instanceDescriptionForObject:secondLayoutItem];
+    NSString* indent = [self spaceWithLength:[installedViewName length]];
+
+    [constraint appendFormat:@"[%@ addConstraint:[NSLayoutConstraint constraintWithItem:%@\n", installedViewName, firstLayoutItemName];
+    [constraint appendFormat:@"                                             %@attribute:%@\n", indent, firstLayoutAttributeString];
+    [constraint appendFormat:@"                                             %@relatedBy:%@\n", indent, relationString];
+    [constraint appendFormat:@"                                                %@toItem:%@\n", indent, secondLayoutItemName];
+    [constraint appendFormat:@"                                             %@attribute:%@\n", indent, secondLayoutAttributeString];
+    [constraint appendFormat:@"                                            %@multiplier:%.1f\n", indent, self.layoutMultiplier];
+    [constraint appendFormat:@"                                              %@constant:%.1f]];\n", indent, self.layoutConstant];
+
     return constraint;
+}
+
+- (NSString*) spaceWithLength:(NSUInteger)length {
+    NSMutableArray* array = [NSMutableArray arrayWithCapacity:length];
+    for (int i = 0; i < length; i ++) {
+        [array addObject:@" "];
+    }
+    return [array componentsJoinedByString:@""];
 }
 
 @end

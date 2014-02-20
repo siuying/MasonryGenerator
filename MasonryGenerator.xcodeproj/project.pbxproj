@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54C845D718B66A640073456F /* MASConstraintMaker+Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C845D618B66A640073456F /* MASConstraintMaker+Generator.m */; };
+		54C845DA18B66B060073456F /* MASConstraint+Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C845D918B66B060073456F /* MASConstraint+Generator.m */; };
+		54C845DE18B66D090073456F /* MASCompositeConstraint+Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C845DD18B66D090073456F /* MASCompositeConstraint+Generator.m */; };
 		54F8AEA818B65E6A002C886A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEA718B65E6A002C886A /* Foundation.framework */; };
 		54F8AEAA18B65E6A002C886A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEA918B65E6A002C886A /* CoreGraphics.framework */; };
 		54F8AEAC18B65E6A002C886A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEAB18B65E6A002C886A /* UIKit.framework */; };
 		54F8AEB218B65E6A002C886A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F8AEB018B65E6A002C886A /* InfoPlist.strings */; };
 		54F8AEB418B65E6A002C886A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AEB318B65E6A002C886A /* main.m */; };
 		54F8AEB818B65E6A002C886A /* IGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AEB718B65E6A002C886A /* IGAppDelegate.m */; };
-		54F8AEBB18B65E6A002C886A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F8AEB918B65E6A002C886A /* Main_iPhone.storyboard */; };
-		54F8AEBE18B65E6A002C886A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F8AEBC18B65E6A002C886A /* Main_iPad.storyboard */; };
 		54F8AEC118B65E6A002C886A /* IGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AEC018B65E6A002C886A /* IGViewController.m */; };
 		54F8AEC318B65E6A002C886A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F8AEC218B65E6A002C886A /* Images.xcassets */; };
 		54F8AECA18B65E6A002C886A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEC918B65E6A002C886A /* XCTest.framework */; };
@@ -24,6 +25,7 @@
 		54F8AED618B65E6A002C886A /* MasonryGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AED518B65E6A002C886A /* MasonryGeneratorTests.m */; };
 		54F8AEE218B66020002C886A /* MASViewConstraint+Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AEE118B66020002C886A /* MASViewConstraint+Generator.m */; };
 		54F8AEE518B66471002C886A /* IGMasonryGeneratorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AEE418B66471002C886A /* IGMasonryGeneratorHelper.m */; };
+		54F8AEE818B66A06002C886A /* View+Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AEE718B66A06002C886A /* View+Generator.m */; };
 		6F991A89A9354A289EE57BEF /* libPods-MasonryGeneratorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC634B376D54B6C9C909674 /* libPods-MasonryGeneratorTests.a */; };
 		D644ACE8D41B4C00AF2C8AD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BB16CEDC3245BEB90EAC6D /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,13 @@
 /* Begin PBXFileReference section */
 		3BC634B376D54B6C9C909674 /* libPods-MasonryGeneratorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryGeneratorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E7677C15E946A0843B997A /* Pods-MasonryGeneratorTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryGeneratorTests.xcconfig"; path = "Pods/Pods-MasonryGeneratorTests.xcconfig"; sourceTree = "<group>"; };
+		54C845D518B66A640073456F /* MASConstraintMaker+Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASConstraintMaker+Generator.h"; path = "Classes/MASConstraintMaker+Generator.h"; sourceTree = "<group>"; };
+		54C845D618B66A640073456F /* MASConstraintMaker+Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASConstraintMaker+Generator.m"; path = "Classes/MASConstraintMaker+Generator.m"; sourceTree = "<group>"; };
+		54C845D818B66B060073456F /* MASConstraint+Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Generator.h"; path = "Classes/MASConstraint+Generator.h"; sourceTree = "<group>"; };
+		54C845D918B66B060073456F /* MASConstraint+Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASConstraint+Generator.m"; path = "Classes/MASConstraint+Generator.m"; sourceTree = "<group>"; };
+		54C845DB18B66BC60073456F /* MasonryGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MasonryGenerator.h; path = Classes/MasonryGenerator.h; sourceTree = "<group>"; };
+		54C845DC18B66D090073456F /* MASCompositeConstraint+Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASCompositeConstraint+Generator.h"; path = "Classes/MASCompositeConstraint+Generator.h"; sourceTree = "<group>"; };
+		54C845DD18B66D090073456F /* MASCompositeConstraint+Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASCompositeConstraint+Generator.m"; path = "Classes/MASCompositeConstraint+Generator.m"; sourceTree = "<group>"; };
 		54F8AEA418B65E6A002C886A /* MasonryGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F8AEA718B65E6A002C886A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54F8AEA918B65E6A002C886A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,8 +60,6 @@
 		54F8AEB518B65E6A002C886A /* MasonryGenerator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasonryGenerator-Prefix.pch"; sourceTree = "<group>"; };
 		54F8AEB618B65E6A002C886A /* IGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGAppDelegate.h; sourceTree = "<group>"; };
 		54F8AEB718B65E6A002C886A /* IGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGAppDelegate.m; sourceTree = "<group>"; };
-		54F8AEBA18B65E6A002C886A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		54F8AEBD18B65E6A002C886A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		54F8AEBF18B65E6A002C886A /* IGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGViewController.h; sourceTree = "<group>"; };
 		54F8AEC018B65E6A002C886A /* IGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGViewController.m; sourceTree = "<group>"; };
 		54F8AEC218B65E6A002C886A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -65,6 +72,8 @@
 		54F8AEE118B66020002C886A /* MASViewConstraint+Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASViewConstraint+Generator.m"; path = "Classes/MASViewConstraint+Generator.m"; sourceTree = "<group>"; };
 		54F8AEE318B66471002C886A /* IGMasonryGeneratorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGMasonryGeneratorHelper.h; path = Classes/IGMasonryGeneratorHelper.h; sourceTree = "<group>"; };
 		54F8AEE418B66471002C886A /* IGMasonryGeneratorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGMasonryGeneratorHelper.m; path = Classes/IGMasonryGeneratorHelper.m; sourceTree = "<group>"; };
+		54F8AEE618B66A06002C886A /* View+Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "View+Generator.h"; path = "Classes/View+Generator.h"; sourceTree = "<group>"; };
+		54F8AEE718B66A06002C886A /* View+Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "View+Generator.m"; path = "Classes/View+Generator.m"; sourceTree = "<group>"; };
 		8FD031806F3D4D519A3896DA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B6BB16CEDC3245BEB90EAC6D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,8 +144,6 @@
 				54F8AEDF18B65F9F002C886A /* Classes */,
 				54F8AEB618B65E6A002C886A /* IGAppDelegate.h */,
 				54F8AEB718B65E6A002C886A /* IGAppDelegate.m */,
-				54F8AEB918B65E6A002C886A /* Main_iPhone.storyboard */,
-				54F8AEBC18B65E6A002C886A /* Main_iPad.storyboard */,
 				54F8AEBF18B65E6A002C886A /* IGViewController.h */,
 				54F8AEC018B65E6A002C886A /* IGViewController.m */,
 				54F8AEC218B65E6A002C886A /* Images.xcassets */,
@@ -177,10 +184,19 @@
 		54F8AEDF18B65F9F002C886A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				54C845DB18B66BC60073456F /* MasonryGenerator.h */,
 				54F8AEE318B66471002C886A /* IGMasonryGeneratorHelper.h */,
 				54F8AEE418B66471002C886A /* IGMasonryGeneratorHelper.m */,
+				54F8AEE618B66A06002C886A /* View+Generator.h */,
+				54F8AEE718B66A06002C886A /* View+Generator.m */,
+				54C845D518B66A640073456F /* MASConstraintMaker+Generator.h */,
+				54C845D618B66A640073456F /* MASConstraintMaker+Generator.m */,
+				54C845D818B66B060073456F /* MASConstraint+Generator.h */,
+				54C845D918B66B060073456F /* MASConstraint+Generator.m */,
 				54F8AEE018B66020002C886A /* MASViewConstraint+Generator.h */,
 				54F8AEE118B66020002C886A /* MASViewConstraint+Generator.m */,
+				54C845DC18B66D090073456F /* MASCompositeConstraint+Generator.h */,
+				54C845DD18B66D090073456F /* MASCompositeConstraint+Generator.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -266,9 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F8AEBE18B65E6A002C886A /* Main_iPad.storyboard in Resources */,
 				54F8AEC318B65E6A002C886A /* Images.xcassets in Resources */,
-				54F8AEBB18B65E6A002C886A /* Main_iPhone.storyboard in Resources */,
 				54F8AEB218B65E6A002C886A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,8 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F8AEE818B66A06002C886A /* View+Generator.m in Sources */,
+				54C845D718B66A640073456F /* MASConstraintMaker+Generator.m in Sources */,
+				54C845DE18B66D090073456F /* MASCompositeConstraint+Generator.m in Sources */,
 				54F8AEB818B65E6A002C886A /* IGAppDelegate.m in Sources */,
 				54F8AEB418B65E6A002C886A /* main.m in Sources */,
+				54C845DA18B66B060073456F /* MASConstraint+Generator.m in Sources */,
 				54F8AEC118B65E6A002C886A /* IGViewController.m in Sources */,
 				54F8AEE218B66020002C886A /* MASViewConstraint+Generator.m in Sources */,
 				54F8AEE518B66471002C886A /* IGMasonryGeneratorHelper.m in Sources */,
@@ -384,22 +402,6 @@
 				54F8AEB118B65E6A002C886A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		54F8AEB918B65E6A002C886A /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54F8AEBA18B65E6A002C886A /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		54F8AEBC18B65E6A002C886A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54F8AEBD18B65E6A002C886A /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		54F8AED218B65E6A002C886A /* InfoPlist.strings */ = {
