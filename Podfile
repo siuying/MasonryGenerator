@@ -3,6 +3,7 @@
 
 pod "Masonry"
 pod "CocoaLumberjack"
+pod "JRSwizzle"
 
 target "MasonryGeneratorTests" do
   pod "Kiwi/XCTest"

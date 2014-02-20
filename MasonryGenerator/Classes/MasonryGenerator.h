@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "Masonry.h"
+#import "MASViewConstraint+Generator.h"
+#import "MASConstraint+Generator.h"
+#import "View+Generator.h"
+
 @interface MasonryGenerator : NSObject
+
+/**
+ * Install the Mansory Generator
+ */
++(void) install;
 
 @end

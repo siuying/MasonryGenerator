@@ -7,7 +7,27 @@
 //
 
 #import "MasonryGenerator.h"
+#import "JRSwizzle.h"
+
+@implementation MAS_VIEW (MasonryGenerator)
+
+- (NSArray *)mas_makeConstraintsWithGenerator:(void(^)(MASConstraintMaker *make))block {
+    [self mas_generateConstraintStrings:block];
+    return [self mas_makeConstraintsWithGenerator:block];
+}
+
+@end
 
 @implementation MasonryGenerator
+
++(void) install
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [MAS_VIEW jr_swizzleMethod:@selector(mas_makeConstraints:) withMethod:@selector(mas_makeConstraintsWithGenerator:) error:nil];
+    });
+}
+
+
 
 @end

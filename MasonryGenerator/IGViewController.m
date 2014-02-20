@@ -19,6 +19,8 @@
 - (void)loadView
 {
     [super loadView];
+    
+    [MasonryGenerator install];
 
     UIView *superview = self.view;
     superview.mas_key = @"superview";
@@ -68,35 +70,6 @@
     }];
     
     [view3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(view1.mas_bottom).offset(padding);
-        make.left.equalTo(superview.mas_left).offset(padding);
-        make.bottom.equalTo(superview.mas_bottom).offset(-padding);
-        make.right.equalTo(superview.mas_right).offset(-padding);
-        make.height.equalTo(@[view1.mas_height, view2.mas_height]); //can pass array of attributes
-    }];
-    
-    [view1 mas_generateConstraintStrings:^(MASConstraintMaker *make) {
-        make.top.greaterThanOrEqualTo(superview.mas_top).offset(padding + 20);
-        make.left.equalTo(superview.mas_left).offset(padding);
-        make.bottom.equalTo(view3.mas_top).offset(-padding);
-        make.right.equalTo(view2.mas_left).offset(-padding);
-        make.width.equalTo(view2.mas_width);
-        
-        make.height.equalTo(view2.mas_height);
-        make.height.equalTo(view3.mas_height);
-    }];
-    
-    [view2 mas_generateConstraintStrings:^(MASConstraintMaker *make) {
-        make.top.equalTo(superview.mas_top).with.offset(padding + 20); //with with
-        make.left.equalTo(view1.mas_right).offset(padding); //without with
-        make.bottom.equalTo(view3.mas_top).offset(-padding);
-        make.right.equalTo(superview.mas_right).offset(-padding);
-        make.width.equalTo(view1.mas_width);
-        
-        make.height.equalTo(@[view1, view3]); //can pass array of views
-    }];
-    
-    [view3 mas_generateConstraintStrings:^(MASConstraintMaker *make) {
         make.top.equalTo(view1.mas_bottom).offset(padding);
         make.left.equalTo(superview.mas_left).offset(padding);
         make.bottom.equalTo(superview.mas_bottom).offset(-padding);

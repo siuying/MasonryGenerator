@@ -4,6 +4,7 @@ PODS:
   - CocoaLumberjack/Core (1.8.1)
   - CocoaLumberjack/Extensions (1.8.1):
     - CocoaLumberjack/Core
+  - JRSwizzle (1.0)
   - Kiwi/ARC (2.2.3)
   - Kiwi/NonARC (2.2.3)
   - Kiwi/XCTest (2.2.3):
@@ -13,11 +14,13 @@ PODS:
 
 DEPENDENCIES:
   - CocoaLumberjack
+  - JRSwizzle
   - Kiwi/XCTest
   - Masonry
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
   Masonry: d673617c9cbc24aaea90fba20b10e47fd9970a39
 

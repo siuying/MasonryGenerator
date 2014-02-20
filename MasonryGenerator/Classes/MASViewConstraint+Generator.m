@@ -9,7 +9,6 @@
 #import "MASViewConstraint+Generator.h"
 #import "IGMasonryGeneratorHelper.h"
 #import "View+MASAdditions.h"
-#import "NSLayoutConstraint+MASDebugAdditions.h"
 
 @interface MASViewConstraint (Private)
 @property (nonatomic, strong, readwrite) MASViewAttribute *secondViewAttribute;
