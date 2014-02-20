@@ -16,6 +16,11 @@
     return [self mas_makeConstraintsWithGenerator:block];
 }
 
+- (NSArray *)mas_updateConstraintsWithGenerator:(void(^)(MASConstraintMaker *make))block {
+    [self mas_generateConstraintStrings:block];
+    return [self mas_updateConstraintsWithGenerator:block];
+}
+
 @end
 
 @implementation MasonryGenerator
@@ -25,9 +30,8 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [MAS_VIEW jr_swizzleMethod:@selector(mas_makeConstraints:) withMethod:@selector(mas_makeConstraintsWithGenerator:) error:nil];
+        [MAS_VIEW jr_swizzleMethod:@selector(mas_updateConstraints:) withMethod:@selector(mas_updateConstraintsWithGenerator:) error:nil];
     });
 }
-
-
 
 @end

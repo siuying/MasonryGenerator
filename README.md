@@ -22,6 +22,9 @@ Then add following line before your layout code:
 [MasonryGenerator install];
 ```
 
+Now any ``mas_makeConstraints:`` or ``mas_updateConstraints:`` calls will print
+the native constraints code on console.
+
 **Important: You should only include MansoryGenerator during development!**
 
 ## License
