@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54F8AEA818B65E6A002C886A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEA718B65E6A002C886A /* Foundation.framework */; };
+		54F8AEAA18B65E6A002C886A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEA918B65E6A002C886A /* CoreGraphics.framework */; };
+		54F8AEAC18B65E6A002C886A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEAB18B65E6A002C886A /* UIKit.framework */; };
+		54F8AEB218B65E6A002C886A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F8AEB018B65E6A002C886A /* InfoPlist.strings */; };
+		54F8AEB418B65E6A002C886A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AEB318B65E6A002C886A /* main.m */; };
+		54F8AEB818B65E6A002C886A /* IGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AEB718B65E6A002C886A /* IGAppDelegate.m */; };
+		54F8AEBB18B65E6A002C886A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F8AEB918B65E6A002C886A /* Main_iPhone.storyboard */; };
+		54F8AEBE18B65E6A002C886A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F8AEBC18B65E6A002C886A /* Main_iPad.storyboard */; };
+		54F8AEC118B65E6A002C886A /* IGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AEC018B65E6A002C886A /* IGViewController.m */; };
+		54F8AEC318B65E6A002C886A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F8AEC218B65E6A002C886A /* Images.xcassets */; };
+		54F8AECA18B65E6A002C886A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEC918B65E6A002C886A /* XCTest.framework */; };
+		54F8AECB18B65E6A002C886A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEA718B65E6A002C886A /* Foundation.framework */; };
+		54F8AECC18B65E6A002C886A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F8AEAB18B65E6A002C886A /* UIKit.framework */; };
+		54F8AED418B65E6A002C886A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F8AED218B65E6A002C886A /* InfoPlist.strings */; };
+		54F8AED618B65E6A002C886A /* MasonryGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F8AED518B65E6A002C886A /* MasonryGeneratorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54F8AECD18B65E6A002C886A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F8AE9C18B65E6A002C886A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54F8AEA318B65E6A002C886A;
+			remoteInfo = MasonryGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54F8AEA418B65E6A002C886A /* MasonryGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F8AEA718B65E6A002C886A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54F8AEA918B65E6A002C886A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		54F8AEAB18B65E6A002C886A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54F8AEAF18B65E6A002C886A /* MasonryGenerator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MasonryGenerator-Info.plist"; sourceTree = "<group>"; };
+		54F8AEB118B65E6A002C886A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54F8AEB318B65E6A002C886A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54F8AEB518B65E6A002C886A /* MasonryGenerator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasonryGenerator-Prefix.pch"; sourceTree = "<group>"; };
+		54F8AEB618B65E6A002C886A /* IGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGAppDelegate.h; sourceTree = "<group>"; };
+		54F8AEB718B65E6A002C886A /* IGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGAppDelegate.m; sourceTree = "<group>"; };
+		54F8AEBA18B65E6A002C886A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		54F8AEBD18B65E6A002C886A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		54F8AEBF18B65E6A002C886A /* IGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGViewController.h; sourceTree = "<group>"; };
+		54F8AEC018B65E6A002C886A /* IGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGViewController.m; sourceTree = "<group>"; };
+		54F8AEC218B65E6A002C886A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		54F8AEC818B65E6A002C886A /* MasonryGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasonryGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F8AEC918B65E6A002C886A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		54F8AED118B65E6A002C886A /* MasonryGeneratorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MasonryGeneratorTests-Info.plist"; sourceTree = "<group>"; };
+		54F8AED318B65E6A002C886A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54F8AED518B65E6A002C886A /* MasonryGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryGeneratorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54F8AEA118B65E6A002C886A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F8AEAA18B65E6A002C886A /* CoreGraphics.framework in Frameworks */,
+				54F8AEAC18B65E6A002C886A /* UIKit.framework in Frameworks */,
+				54F8AEA818B65E6A002C886A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F8AEC518B65E6A002C886A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F8AECA18B65E6A002C886A /* XCTest.framework in Frameworks */,
+				54F8AECC18B65E6A002C886A /* UIKit.framework in Frameworks */,
+				54F8AECB18B65E6A002C886A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54F8AE9B18B65E6A002C886A = {
+			isa = PBXGroup;
+			children = (
+				54F8AEAD18B65E6A002C886A /* MasonryGenerator */,
+				54F8AECF18B65E6A002C886A /* MasonryGeneratorTests */,
+				54F8AEA618B65E6A002C886A /* Frameworks */,
+				54F8AEA518B65E6A002C886A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54F8AEA518B65E6A002C886A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54F8AEA418B65E6A002C886A /* MasonryGenerator.app */,
+				54F8AEC818B65E6A002C886A /* MasonryGeneratorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54F8AEA618B65E6A002C886A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54F8AEA718B65E6A002C886A /* Foundation.framework */,
+				54F8AEA918B65E6A002C886A /* CoreGraphics.framework */,
+				54F8AEAB18B65E6A002C886A /* UIKit.framework */,
+				54F8AEC918B65E6A002C886A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54F8AEAD18B65E6A002C886A /* MasonryGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				54F8AEB618B65E6A002C886A /* IGAppDelegate.h */,
+				54F8AEB718B65E6A002C886A /* IGAppDelegate.m */,
+				54F8AEB918B65E6A002C886A /* Main_iPhone.storyboard */,
+				54F8AEBC18B65E6A002C886A /* Main_iPad.storyboard */,
+				54F8AEBF18B65E6A002C886A /* IGViewController.h */,
+				54F8AEC018B65E6A002C886A /* IGViewController.m */,
+				54F8AEC218B65E6A002C886A /* Images.xcassets */,
+				54F8AEAE18B65E6A002C886A /* Supporting Files */,
+			);
+			path = MasonryGenerator;
+			sourceTree = "<group>";
+		};
+		54F8AEAE18B65E6A002C886A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54F8AEAF18B65E6A002C886A /* MasonryGenerator-Info.plist */,
+				54F8AEB018B65E6A002C886A /* InfoPlist.strings */,
+				54F8AEB318B65E6A002C886A /* main.m */,
+				54F8AEB518B65E6A002C886A /* MasonryGenerator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54F8AECF18B65E6A002C886A /* MasonryGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				54F8AED518B65E6A002C886A /* MasonryGeneratorTests.m */,
+				54F8AED018B65E6A002C886A /* Supporting Files */,
+			);
+			path = MasonryGeneratorTests;
+			sourceTree = "<group>";
+		};
+		54F8AED018B65E6A002C886A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54F8AED118B65E6A002C886A /* MasonryGeneratorTests-Info.plist */,
+				54F8AED218B65E6A002C886A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54F8AEA318B65E6A002C886A /* MasonryGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F8AED918B65E6A002C886A /* Build configuration list for PBXNativeTarget "MasonryGenerator" */;
+			buildPhases = (
+				54F8AEA018B65E6A002C886A /* Sources */,
+				54F8AEA118B65E6A002C886A /* Frameworks */,
+				54F8AEA218B65E6A002C886A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasonryGenerator;
+			productName = MasonryGenerator;
+			productReference = 54F8AEA418B65E6A002C886A /* MasonryGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54F8AEC718B65E6A002C886A /* MasonryGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F8AEDC18B65E6A002C886A /* Build configuration list for PBXNativeTarget "MasonryGeneratorTests" */;
+			buildPhases = (
+				54F8AEC418B65E6A002C886A /* Sources */,
+				54F8AEC518B65E6A002C886A /* Frameworks */,
+				54F8AEC618B65E6A002C886A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54F8AECE18B65E6A002C886A /* PBXTargetDependency */,
+			);
+			name = MasonryGeneratorTests;
+			productName = MasonryGeneratorTests;
+			productReference = 54F8AEC818B65E6A002C886A /* MasonryGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54F8AE9C18B65E6A002C886A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IG;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ignition Soft";
+				TargetAttributes = {
+					54F8AEC718B65E6A002C886A = {
+						TestTargetID = 54F8AEA318B65E6A002C886A;
+					};
+				};
+			};
+			buildConfigurationList = 54F8AE9F18B65E6A002C886A /* Build configuration list for PBXProject "MasonryGenerator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54F8AE9B18B65E6A002C886A;
+			productRefGroup = 54F8AEA518B65E6A002C886A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54F8AEA318B65E6A002C886A /* MasonryGenerator */,
+				54F8AEC718B65E6A002C886A /* MasonryGeneratorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54F8AEA218B65E6A002C886A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F8AEBE18B65E6A002C886A /* Main_iPad.storyboard in Resources */,
+				54F8AEC318B65E6A002C886A /* Images.xcassets in Resources */,
+				54F8AEBB18B65E6A002C886A /* Main_iPhone.storyboard in Resources */,
+				54F8AEB218B65E6A002C886A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F8AEC618B65E6A002C886A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F8AED418B65E6A002C886A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54F8AEA018B65E6A002C886A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F8AEB818B65E6A002C886A /* IGAppDelegate.m in Sources */,
+				54F8AEB418B65E6A002C886A /* main.m in Sources */,
+				54F8AEC118B65E6A002C886A /* IGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F8AEC418B65E6A002C886A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F8AED618B65E6A002C886A /* MasonryGeneratorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54F8AECE18B65E6A002C886A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54F8AEA318B65E6A002C886A /* MasonryGenerator */;
+			targetProxy = 54F8AECD18B65E6A002C886A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54F8AEB018B65E6A002C886A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F8AEB118B65E6A002C886A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54F8AEB918B65E6A002C886A /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F8AEBA18B65E6A002C886A /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		54F8AEBC18B65E6A002C886A /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F8AEBD18B65E6A002C886A /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		54F8AED218B65E6A002C886A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F8AED318B65E6A002C886A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54F8AED718B65E6A002C886A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54F8AED818B65E6A002C886A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54F8AEDA18B65E6A002C886A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasonryGenerator/MasonryGenerator-Prefix.pch";
+				INFOPLIST_FILE = "MasonryGenerator/MasonryGenerator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54F8AEDB18B65E6A002C886A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasonryGenerator/MasonryGenerator-Prefix.pch";
+				INFOPLIST_FILE = "MasonryGenerator/MasonryGenerator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		54F8AEDD18B65E6A002C886A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MasonryGenerator.app/MasonryGenerator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasonryGenerator/MasonryGenerator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MasonryGeneratorTests/MasonryGeneratorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		54F8AEDE18B65E6A002C886A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MasonryGenerator.app/MasonryGenerator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasonryGenerator/MasonryGenerator-Prefix.pch";
+				INFOPLIST_FILE = "MasonryGeneratorTests/MasonryGeneratorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54F8AE9F18B65E6A002C886A /* Build configuration list for PBXProject "MasonryGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F8AED718B65E6A002C886A /* Debug */,
+				54F8AED818B65E6A002C886A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F8AED918B65E6A002C886A /* Build configuration list for PBXNativeTarget "MasonryGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F8AEDA18B65E6A002C886A /* Debug */,
+				54F8AEDB18B65E6A002C886A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54F8AEDC18B65E6A002C886A /* Build configuration list for PBXNativeTarget "MasonryGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F8AEDD18B65E6A002C886A /* Debug */,
+				54F8AEDE18B65E6A002C886A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54F8AE9C18B65E6A002C886A /* Project object */;
+}
